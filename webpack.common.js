@@ -3,7 +3,6 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
-  mode: "development",
   entry: "./src/app.js",
   output: {
     filename: "[name].[contenthash].js",
@@ -33,7 +32,6 @@ module.exports = {
       },
     ],
   },
-  devtool: "inline-source-map",
   devServer: {
     contentBase: "/dist",
     publicPath: "/",
