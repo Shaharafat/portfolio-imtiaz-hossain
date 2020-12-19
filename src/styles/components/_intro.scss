@@ -1,0 +1,29 @@
+.introduction{
+  background-color: $background-color;
+  height: calc(100vh - 82px);
+}
+
+.introduction__content{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.introduction__text{
+  font-size: $size-md;
+  color: $primary-color;
+}
+
+.introduction__name{
+  color: #fff;
+  font-size: $size-xxl;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.introduction__profession{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: $primary-color;
+}
+

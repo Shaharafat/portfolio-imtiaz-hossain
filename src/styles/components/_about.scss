@@ -1,0 +1,49 @@
+.about{
+  height: 100vh;
+  background: $background-color;
+  display: flex;
+  align-items:center;
+  position: relative;
+}
+
+.about::before{
+  @include section-title;
+  content: 'about';
+}
+
+.about__content{
+  padding: $size-md 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__text{
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.5;
+  flex-basis: 50%;
+}
+
+.about__image-section{
+  flex-basis:40%;
+  margin-left: auto;
+}
+
+.about__image{
+  width: 80%;
+  border-radius: 10px;
+  border: 5px solid #fff;
+  filter: grayscale(60%);
+  transform: scale(1);
+  transition: filter 1s ease, transform 1s ease;
+}
+
+.about__image:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1)
+}
+
+.about__text__name{
+  position: relative
+}

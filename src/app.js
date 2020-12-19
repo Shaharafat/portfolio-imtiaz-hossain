@@ -1,9 +1,20 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
-import './styles/base.scss'
+
+import Header from './components/Header';
+import Intro from './components/Intro';
+import About from './components/About';
+import Tools from './components/Tools';
+
+// styles
+import './styles/styles.scss'
 
 const App = () => (
-  <div>Assalamu alaikum! This is arafat.</div>
+  <div>
+    <Header/>
+    <Intro/>
+    <About/>
+    <Tools/>
+  </div>
 )
 
-ReactDOM.render(<App />, document.getElementById('root'))
+export default App;

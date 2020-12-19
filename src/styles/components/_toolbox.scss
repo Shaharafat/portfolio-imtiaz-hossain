@@ -1,0 +1,25 @@
+.toolbox{
+  background-color: $foreground-color;
+  border-radius: 10px;
+  box-shadow: 1px 2px 15px 5px rgba(0,0,0,.2);
+  width: 20%;
+  overflow: hidden;
+  box-shadow: none;
+  transition: box-shadow .5s ease;
+}
+
+.toolbox:hover{
+  box-shadow: 1px 2px 15px 5px rgba(0,0,0,.2);
+}
+
+.toolbox__image{
+  background: #fff;
+  width: 100%;
+}
+
+.toolbox__title{
+  color: #fff;
+  font-size: $size-sm;
+  padding: $size-sm-ultra 0;
+  text-align: center;
+}

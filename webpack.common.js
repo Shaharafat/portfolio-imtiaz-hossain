@@ -3,10 +3,11 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
-  entry: "./src/app.js",
+  entry: "./index.js",
   output: {
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/"
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -27,8 +28,8 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|gif|jpe?g|svg)$/,
-        use: "asset/resource",
+        test: /\.(png|gif|jpe?g|svg)$/i,
+        type: 'asset/resource',
       },
     ],
   },

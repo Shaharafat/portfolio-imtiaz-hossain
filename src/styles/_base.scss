@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+section,
+span,
+input,
+form,
+table,
+figcaption,
+figure,
+button,
+article,
+p,
+header,
+footer,
+aside,
+a,
+tr,
+td,
+th,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.down-bordered{
+  display: inline-block;
+  width: 100%;
+  content: '';
+  border-bottom: 6px solid $primary-color;
+  position: absolute;
+  bottom : 0;
+  left: 0;
+}
+
+@mixin section-title {
+  display: block;
+  font-size: $size-lg-pro;
+  color: $secondary-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  opacity: 0.1;
+}
+
