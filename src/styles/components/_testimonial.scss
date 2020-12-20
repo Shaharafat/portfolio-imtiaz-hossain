@@ -1,0 +1,13 @@
+.testimonial{
+  height: 80vh;
+  background-color: $background-color;
+  display: flex;
+  position: relative;
+  align-items: center;  
+
+}
+
+.testimonial::before{
+  @include section-title;
+  content: 'Testimonial'
+}
