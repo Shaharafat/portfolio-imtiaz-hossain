@@ -4,12 +4,8 @@
   box-shadow: 1px 2px 15px 5px rgba(0,0,0,.2);
   width: 20%;
   overflow: hidden;
-  box-shadow: none;
+  box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.1);
   transition: box-shadow .5s ease;
-}
-
-.toolbox:hover{
-  box-shadow: 1px 2px 15px 5px rgba(0,0,0,.2);
 }
 
 .toolbox__image{

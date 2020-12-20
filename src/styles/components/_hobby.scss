@@ -1,0 +1,17 @@
+.hobby{
+  height: 70vh;
+  background-color: $background-color;
+  position: relative;
+}
+
+.hobby::before{
+  @include section-title;
+  content: 'what I like';
+}
+
+.hobby__content{
+  height: 100%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}

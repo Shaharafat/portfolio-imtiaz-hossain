@@ -1,8 +1,9 @@
 import React from 'react'
 
-import Header from './components/Header';
-import Intro from './components/Intro';
 import About from './components/About';
+import Header from './components/Header';
+import Hobby from './components/Hobby';
+import Intro from './components/Intro';
 import Tools from './components/Tools';
 
 // styles
@@ -14,6 +15,7 @@ const App = () => (
     <Intro/>
     <About/>
     <Tools/>
+    <Hobby/>
   </div>
 )
 
