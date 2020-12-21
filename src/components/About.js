@@ -1,5 +1,6 @@
 import React from "react";
 import profileImage from "../images/profileImage.jpg";
+import label from '../images/levelone.png'
 
 const About = () => {
   return (
@@ -18,11 +19,11 @@ const About = () => {
           report of statistical research.
         </article>
         <div className="about__image-section">
-          <img
-            src={profileImage}
-            className="about__image"
-            alt="Profile Image"
-          />
+            <img
+              src={profileImage}
+              className="about__image"
+              alt="Profile Image"
+            />
         </div>
       </div>
     </div>

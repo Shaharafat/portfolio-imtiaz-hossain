@@ -45,6 +45,15 @@ body {
   left: 0;
 }
 
+.button-primary{
+  padding: $size-sm-ultra $size-sm;
+  background: $primary-color;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
 @mixin section-title {
   display: block;
   font-size: $size-lg-pro;

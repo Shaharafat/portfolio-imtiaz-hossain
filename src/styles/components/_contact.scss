@@ -1,0 +1,60 @@
+.contact{
+  align-items: center;
+  background-color: $background-color;
+  display: flex;
+  height: 70vh;
+  position:relative;
+}
+
+.contact::before{
+  @include section-title;
+  content:"contact"
+}
+
+.contact-content{
+  display: flex;
+  justify-content:center;
+}
+
+.contact-content>div{
+  flex-basis: 40%;
+}
+
+.contact__info__text{
+  color: #fff;
+  font-size: $size-sm;
+  line-height: 1.5;
+  // margin-top: $size-sm-ultra;
+}
+
+.contact__info__contact-button{
+  display: inline-block;
+  margin: $size-sm 0;
+  color: $background-color;
+  font-weight: 600;
+}
+
+.contact__info--left{
+  margin: $size-sm-ultra 
+}
+
+.contact__info__social-list{
+  padding: 0;
+  list-style-type: none;
+  >li{
+    margin: $size-sm-ultra 0;
+  }
+}
+
+.contact__info__social-name{
+  color: #ffffff;
+  font-size: $size-sm;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: $size-sm 0;
+}
+
+.contact__info__social-details{
+  color: #e2e1e1;
+  font-size: 1.2rem;
+}

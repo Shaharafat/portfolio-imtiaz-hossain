@@ -10,8 +10,9 @@
 }
 
 .introduction__text{
-  font-size: $size-md;
+  font-size: $size-sm;
   color: $primary-color;
+  font-weight: 300;
 }
 
 .introduction__name{
@@ -23,7 +24,7 @@
 
 .introduction__profession{
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
   color: $primary-color;
 }
 
