@@ -3,7 +3,7 @@ import HobbyBox from './HobbyBox'
 import {hobbyData} from '../hobbyData'
 const Hobby = () => {
   return ( 
-    <div className="hobby">
+    <div className="hobby" id="hobby">
       <div className="content-wrapper hobby__content">
         {
           hobbyData.map(hobby => <HobbyBox icon={hobby.icon} title={hobby.title} />)

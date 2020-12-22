@@ -17,20 +17,22 @@ import Footer from "./components/Footer";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import "./styles/styles.scss";
 
-const App = () => (
-  <div>
-    <Helmet>
-      <link rel="shortcut icon" href={favicon} type="image/x-icon" />
-    </Helmet>
-    <Header />
-    <Intro />
-    <About />
-    <Tools />
-    <Hobby />
-    <Testimonial />
-    <Contact/>
-    <Footer/>
-  </div>
-);
+const App = () => {
+  return (
+    <div>
+      <Helmet>
+        <link rel="shortcut icon" href={favicon} type="image/x-icon" />
+      </Helmet>
+      <Header />
+      <Intro />
+      <About />
+      <Tools />
+      <Hobby />
+      <Testimonial />
+      <Contact />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;

@@ -1,5 +1,9 @@
 .header{
   background: $background-color;
+  position:sticky;
+  top:0;
+  left:0;
+  z-index:1;
 }
 
 .header-content{

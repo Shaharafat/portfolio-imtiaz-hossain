@@ -16,6 +16,9 @@
   padding: $size-sm-ultra;
   font-weight: 700;
   color: $foreground-color;
+  border:none;
+  outline: none;
+  cursor:pointer;
 }
 
 .footer__copyright-text{
