@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect,useRef} from "react";
 import { data } from "../data";
 import ToolBox from "./ToolBox";
 
@@ -7,7 +7,7 @@ const Tools = () => {
     <div className="tools" id="tools">
       <div className="tools__content content-wrapper">
         {data.map((item) => (
-          <ToolBox image={item.image} toolName={item.toolName} />
+          <ToolBox key={item.toolName}  image={item.image} toolName={item.toolName} />
         ))}
       </div>
     </div>

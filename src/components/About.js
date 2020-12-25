@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+
 import profileImage from "../images/profileImage.jpg";
-import label from '../images/levelone.png'
+import { createObserver } from "../helper";
 
 const About = () => {
+  const textElement = useRef(null);
+  const imageElement = useRef(null);
+  useEffect(() => {
+    createObserver(textElement.current);
+    createObserver(imageElement.current);
+  },[]);
+
   return (
-    <div className="about" id="about">
+    <div  className="about" id="about">
       <div className="about__content content-wrapper">
-        <article className="about__text">
+        <article ref={textElement} className="about__text off-animation">
           Hello, this is Mohammed{" "}
           <span className="about__text__name">
             Imtiaz Hossain
@@ -19,11 +27,12 @@ const About = () => {
           report of statistical research.
         </article>
         <div className="about__image-section">
-            <img
-              src={profileImage}
-              className="about__image"
-              alt="Profile Image"
-            />
+          <img
+            ref={imageElement}
+            src={profileImage}
+            className="about__image off-animation"
+            alt="Profile Image"
+          />
         </div>
       </div>
     </div>

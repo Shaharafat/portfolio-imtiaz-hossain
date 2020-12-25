@@ -6,7 +6,7 @@ const Hobby = () => {
     <div className="hobby" id="hobby">
       <div className="content-wrapper hobby__content">
         {
-          hobbyData.map(hobby => <HobbyBox icon={hobby.icon} title={hobby.title} />)
+          hobbyData.map(hobby => <HobbyBox key={hobby.title} icon={hobby.icon} title={hobby.title} />)
         }
       </div>
     </div>

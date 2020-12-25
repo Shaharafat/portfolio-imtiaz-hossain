@@ -1,9 +1,10 @@
 .header{
   background: $background-color;
-  position:sticky;
-  top:0;
-  left:0;
-  z-index:1;
+  position:fixed;
+  z-index:10;
+  width: 100%;
+  transform: translateY(0);
+  transition: transform .5s ease;
 }
 
 .header-content{
@@ -27,11 +28,19 @@
 }
 
 .header__nav__list__item__link{
-  color: $secondary-color;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .header__nav__list__item__link:hover{
   color: $primary-color;
+}
+
+.show-nav{
+  transform: translateY(0);
+}
+
+.hide-nav{
+  transform: translateY(-100px);
 }
