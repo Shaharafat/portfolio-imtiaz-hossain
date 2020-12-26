@@ -6,6 +6,7 @@ import { createObserver } from "../helper";
 const About = () => {
   const textElement = useRef(null);
   const imageElement = useRef(null);
+
   useEffect(() => {
     createObserver(textElement.current);
     createObserver(imageElement.current);

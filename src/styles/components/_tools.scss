@@ -5,8 +5,12 @@
   min-height: 80vh;
   position: relative;
 
-  @media screen and (max-width: 560px){
+  @media screen and (max-width: 640px){
     min-height: 100vh;
+  }
+
+  @media screen and (max-width: 375px){
+    min-height: 80vh;
   }
 }
 
@@ -20,7 +24,7 @@
   align-items:center;
   justify-content: space-around;
 
-  @media screen and (max-width: 560px){
+  @media screen and (max-width: 640px){
     justify-content:space-between;
     flex-wrap: wrap;
   }

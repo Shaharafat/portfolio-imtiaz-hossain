@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../images/logo.svg";
 
@@ -21,11 +22,9 @@ const Header = () => {
       prevScrollPosition = currentScrollPosition;
     });
   }
-
   const hamburgerToggle = () => {
     setMobileNavStatus(!isMobileNavActive);
-    console.log(isMobileNavActive);
-  }
+  };
 
   const gotoElement = (e) => {
     e.preventDefault();
@@ -39,16 +38,16 @@ const Header = () => {
         behavior: "smooth",
       });
     }
-    setMobileNavStatus(false)
+    setMobileNavStatus(false);
   };
 
   return (
     <div ref={nav} className="header">
       <div className="content-wrapper">
         <div className="header-content">
-          <a className="header__home" href="#intro" onClick={gotoElement}>
+          <Link to="/" className="header__home" onClick={gotoElement}>
             <img src={logo} alt="site logo" className="header__image" />
-          </a>
+          </Link>
           <nav className="header__nav">
             <div>
               {isMobileNavActive ? (
@@ -61,7 +60,11 @@ const Header = () => {
                 </span>
               )}
             </div>
-            <ul className={`header__nav__list ${isMobileNavActive ? 'active' : ''}`}>
+            <ul
+              className={`header__nav__list ${
+                isMobileNavActive ? "active" : ""
+              }`}
+            >
               <li className="header__nav__list__item">
                 <a
                   className="header__nav__list__item__link"

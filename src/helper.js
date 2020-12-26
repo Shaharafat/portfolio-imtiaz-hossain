@@ -1,7 +1,7 @@
 function callBack(entries) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.remove("off-animation")
+      entry.target.classList.remove("off-animation");
       entry.target.classList.add("on-animation");
     }
   });

@@ -1,6 +1,6 @@
-import travelling from './images/around.png'
-import readingBooks from './images/book.png'
-import watchingDocumentaries from './images/video.png'
+import travelling from '../images/around.png'
+import readingBooks from '../images/book.png'
+import watchingDocumentaries from '../images/video.png'
 
 export const hobbyData = [
   {
@@ -9,7 +9,7 @@ export const hobbyData = [
   },
   {
     icon: readingBooks,
-    title: "Reading Books",
+    title: "Reading",
   },
   {
     icon: watchingDocumentaries,

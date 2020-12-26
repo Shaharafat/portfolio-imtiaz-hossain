@@ -3,6 +3,7 @@ import { createObserver } from '../helper'
 
 const ToolBox = ({ image, toolName }) => {
   const toolElement = useRef(null);
+  
   useEffect(() => {
     createObserver(toolElement.current);
   })

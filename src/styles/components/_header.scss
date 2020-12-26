@@ -17,7 +17,7 @@
   width: 50px;
   padding: $size-sm 0;
 
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 640px) {
     padding: 0.5rem 0;
   }
 }
@@ -31,7 +31,7 @@
   display: flex;
   list-style-type: none;
 
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 640px) {
     flex-direction: column;
     position: fixed;
     left: 0;
@@ -51,7 +51,7 @@
 
 .header__nav__list__item {
   margin-left: $size-sm;
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 640px) {
     margin-left: 0px;
     border-bottom: 1px solid $foreground-color;
     &:hover {
@@ -65,7 +65,7 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 640px) {
     display: block;
     text-align: center;
     padding: $size-md 0;
@@ -87,7 +87,7 @@
 .menu-icon {
   color: #ffffff;
   display: none;
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 640px) {
     display: inline-block;
     font-size: $size-sm;
     cursor: pointer;

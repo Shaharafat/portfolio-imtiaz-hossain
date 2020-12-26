@@ -1,5 +1,5 @@
 .hobby{
-  height: 70vh;
+  height: 80vh;
   background-color: $background-color;
   position: relative;
 }
@@ -16,7 +16,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  @media screen and (max-width:560px){
+  @media screen and (max-width:640px){
     height: 80%;
     justify-content: space-between;
   }

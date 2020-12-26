@@ -8,7 +8,7 @@
   position:relative;
   flex-basis: 25%;
 
-  @media screen and (max-width:560px){
+  @media screen and (max-width:640px){
     flex-basis: 45%;
     margin-bottom: $size-sm;
   }
@@ -18,7 +18,7 @@
   width: 85px;
   margin-left: auto;
 
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 640px) {
     width: 65px;
   }
 }
@@ -27,7 +27,11 @@
   font-size: $size-sm;
   color: #fff;
   
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 640px) {
+    font-size: $size-sm-ultra;
+  }
+
+  @media screen and (max-width: 768px) {
     font-size: $size-sm-ultra;
   }
 }

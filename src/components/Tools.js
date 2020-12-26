@@ -1,5 +1,5 @@
 import React,{useEffect,useRef} from "react";
-import { data } from "../data";
+import { data } from "../data/toolData";
 import ToolBox from "./ToolBox";
 
 const Tools = () => {

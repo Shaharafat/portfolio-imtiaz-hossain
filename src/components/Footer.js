@@ -2,6 +2,7 @@ import React from "react";
 import { FaChevronUp } from "react-icons/fa";
 
 const Footer = () => {
+  
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -9,6 +10,7 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
+
   return (
     <div className="footer">
       <div className="content-wrapper footer-content">

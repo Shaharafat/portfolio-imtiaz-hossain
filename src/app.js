@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-
+import { BrowserRouter as Router } from "react-router-dom";
 
 // favicon
 import favicon from "./images/favicon.png";
@@ -24,14 +24,16 @@ const App = () => {
       <Helmet>
         <link rel="shortcut icon" href={favicon} type="image/x-icon" />
       </Helmet>
-      <Header />
-      <Intro />
-      <About />
-      <Tools />
-      <Hobby />
-      <Testimonial />
-      <Contact />
-      <Footer />
+      <Router>
+        <Header />
+        <Intro />
+        <About />
+        <Tools />
+        <Hobby />
+        <Testimonial />
+        <Contact />
+        <Footer />
+      </Router>
     </div>
   );
 };
