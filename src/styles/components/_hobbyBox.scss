@@ -6,15 +6,28 @@
   flex-direction: column;
   padding: $size-sm;
   position:relative;
-  width: 25%;
+  flex-basis: 25%;
+
+  @media screen and (max-width:560px){
+    flex-basis: 45%;
+    margin-bottom: $size-sm;
+  }
 }
 
 .hobbyBox__icon{
   width: 85px;
   margin-left: auto;
+
+  @media screen and (max-width: 560px) {
+    width: 65px;
+  }
 }
 
 .hobbyBox__title{
   font-size: $size-sm;
   color: #fff;
+  
+  @media screen and (max-width: 560px) {
+    font-size: $size-sm-ultra;
+  }
 }

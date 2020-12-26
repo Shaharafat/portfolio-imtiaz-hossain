@@ -2,8 +2,12 @@
   align-items: center;
   background: $background-color;
   display: flex;
-  height: 80vh;
+  min-height: 80vh;
   position: relative;
+
+  @media screen and (max-width: 560px){
+    min-height: 100vh;
+  }
 }
 
 .tools::before{
@@ -15,4 +19,9 @@
   display: flex;
   align-items:center;
   justify-content: space-around;
+
+  @media screen and (max-width: 560px){
+    justify-content:space-between;
+    flex-wrap: wrap;
+  }
 }

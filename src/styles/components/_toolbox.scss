@@ -2,10 +2,15 @@
   background-color: $foreground-color;
   border-radius: 10px;
   box-shadow: 1px 2px 15px 5px rgba(0,0,0,.2);
-  width: 20%;
+  flex-basis: 20%;
   overflow: hidden;
   box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.1);
   transition: box-shadow .5s ease;
+
+  @media screen and (max-width: 560px) {
+    flex-basis: 45%;
+    margin-bottom: $size-sm;
+  }
 }
 
 .toolbox__image{
@@ -18,4 +23,8 @@
   font-size: $size-sm;
   padding: $size-sm-ultra 0;
   text-align: center;
+
+  @media screen and (max-width: 560px) {
+    font-size: $size-sm-ultra;
+  }
 }

@@ -2,7 +2,7 @@
   align-items: center;
   background-color: $background-color;
   display: flex;
-  height: 70vh;
+  min-height: 70vh;
   position:relative;
 }
 
@@ -14,6 +14,10 @@
 .contact-content{
   display: flex;
   justify-content:center;
+
+  @media screen and (max-width: 560px) {
+    flex-direction: column;
+  }
 }
 
 .contact-content>div{
@@ -24,7 +28,10 @@
   color: #fff;
   font-size: $size-sm;
   line-height: 1.5;
-  // margin-top: $size-sm-ultra;
+
+  @media screen and (max-width: 560px) {
+    font-size: $size-sm-ultra;
+  }
 }
 
 .contact__info__contact-button{
@@ -35,7 +42,10 @@
 }
 
 .contact__info--left{
-  margin: $size-sm-ultra 
+  margin: $size-sm-ultra;
+  @media screen and (max-width: 560px) {
+    margin:0;
+  }
 }
 
 .contact__info__social-list{
@@ -52,9 +62,15 @@
   font-weight: 600;
   line-height: 1.5;
   padding: $size-sm 0;
+  @media screen and (max-width: 560px) {
+    font-size: $size-sm;
+  }
 }
 
 .contact__info__social-details{
   color: #e2e1e1;
   font-size: 1.2rem;
+  @media screen and (max-width: 560px) {
+    font-size: $size-sm-ultra;
+  }
 }

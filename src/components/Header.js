@@ -1,8 +1,11 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../images/logo.svg";
 
 const Header = () => {
   const nav = useRef(null);
+  const [isMobileNavActive, setMobileNavStatus] = useState(false);
+
   if (typeof window !== "undefined") {
     let prevScrollPosition = window.pageYOffset;
     window.addEventListener("scroll", () => {
@@ -18,6 +21,12 @@ const Header = () => {
       prevScrollPosition = currentScrollPosition;
     });
   }
+
+  const hamburgerToggle = () => {
+    setMobileNavStatus(!isMobileNavActive);
+    console.log(isMobileNavActive);
+  }
+
   const gotoElement = (e) => {
     e.preventDefault();
     const hash = e.target.hash;
@@ -30,7 +39,9 @@ const Header = () => {
         behavior: "smooth",
       });
     }
+    setMobileNavStatus(false)
   };
+
   return (
     <div ref={nav} className="header">
       <div className="content-wrapper">
@@ -39,7 +50,18 @@ const Header = () => {
             <img src={logo} alt="site logo" className="header__image" />
           </a>
           <nav className="header__nav">
-            <ul className="header__nav__list">
+            <div>
+              {isMobileNavActive ? (
+                <span className="menu-icon" onClick={hamburgerToggle}>
+                  <FaTimes />
+                </span>
+              ) : (
+                <span className="menu-icon" onClick={hamburgerToggle}>
+                  <FaBars />
+                </span>
+              )}
+            </div>
+            <ul className={`header__nav__list ${isMobileNavActive ? 'active' : ''}`}>
               <li className="header__nav__list__item">
                 <a
                   className="header__nav__list__item__link"
